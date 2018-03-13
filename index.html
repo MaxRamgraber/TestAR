@@ -4,11 +4,11 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
 
   <body style='margin : 0px; overflow: hidden;'>
+    <a-assets >
+      <video id="myvideo" src="https://www.youtube.com/watch?v=Og5-Pm4HNlI"></video>
+    </a-assets>
     <a-scene embedded arjs>
   	<a-marker preset="hiro">
-            <a-assets >
-              <video id="myvideo" src="https://www.youtube.com/watch?v=Og5-Pm4HNlI"></video>
-            </a-assets>
             <a-plane material="src:#myvideo" video-handler></a-plane>
   	</a-marker>
   	<a-entity camera></a-entity>
